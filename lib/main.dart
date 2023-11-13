@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'blocs/fitness_bloc/fitness_bloc_bloc.dart';
-import 'views/screens/splash_screen.dart';
+import 'views/screens/walkthrough/walkthrough_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blue),
       home: BlocProvider(
         create: (context) => FitnessBlocBloc(),
-        child: const SplashScreen(),
+        child: const WalkthroughScreen(),
       ),
     );
   }
